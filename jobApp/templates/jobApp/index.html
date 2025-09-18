@@ -1,0 +1,16 @@
+{% extends 'jobApp/master.html' %}
+{% block title %}job portal{% endblock %}
+{% block content %}
+<h2>job portal</h2>
+<div class="jobList">
+{% for job in jobs %}
+	<div class="jobPost">
+		<h3>{{job.title}}</h3>
+		{% if job.pub_date is not None and job.due_date is not None %}
+		<h5>{{job.pub_date}} - {{job.due_date}}</h5>
+		{% endif %}
+		<h5>by: {{job.publisher}}</h5>
+	</div>
+{% endfor %}
+</div>
+{% endblock %}
