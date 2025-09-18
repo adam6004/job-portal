@@ -9,7 +9,7 @@
 		{% if job.pub_date is not None and job.due_date is not None %}
 		<h5>{{job.pub_date}} - {{job.due_date}}</h5>
 		{% endif %}
-		<h5>{{job.publisher}}</h5>
+		<h5>by: {{job.publisher}}</h5>
 	</div>
 {% endfor %}
 </div>

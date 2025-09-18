@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+}
+
+.jobList {
+	padding: 2em;
+	width: 80vw;
+	height: 95vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
+.jobPost {
+	width: 15em;
+	height: 15em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid slateblue;
+}

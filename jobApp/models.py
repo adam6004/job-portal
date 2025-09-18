@@ -2,11 +2,10 @@ from django.db import models
 
 # Create your models here.
 class User(models.Model):
-    nickname = models.CharField(max_length=40)
     login = models.CharField(max_length=40)
     password = models.CharField(max_length=40)
     def __str__(self):
-        return self.nickname
+        return self.login
 
 class Job(models.Model):
     title = models.CharField(max_length=50)
