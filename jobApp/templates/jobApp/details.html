@@ -1,0 +1,10 @@
+{% extends 'jobApp/master.html' %}
+{% block title %}{{job.title}}{% endblock %}
+{% block content %}
+<h1>{{job.title}}</h1>
+{% if job.pub_date and job.due_date %}
+<h4>{{job.pub_date}} - {{job.due_date}}</h4>
+{% endif %}
+<h5>{{job.description}}</h5>
+
+{% endblock %}
