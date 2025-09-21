@@ -10,6 +10,7 @@
 		<h5>{{job.pub_date}} - {{job.due_date}}</h5>
 		{% endif %}
 		<h5>by: {{job.publisher}}</h5>
+		<a href="{% url 'details' job.id %}">view details</a>
 	</div>
 {% endfor %}
 </div>
